@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSDate+Category.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self demo1];
+}
+
+- (void)demo1 {
+    NSString *timeString = @"Mon Dec 05 11:56:38 +0800 2016";
+    NSDate *timeDate = [NSDate timeStringToDate:timeString];
+    NSLog(@"--%@",timeDate);
+    NSString *requiredString = [timeDate dateToRequiredString];
+    NSLog(@"--%@",requiredString);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

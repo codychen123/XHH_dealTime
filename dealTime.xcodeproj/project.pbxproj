@@ -13,6 +13,10 @@
 		66E8B8AA1DF510B500901861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E8B8A81DF510B500901861 /* Main.storyboard */; };
 		66E8B8AC1DF510B500901861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E8B8AB1DF510B500901861 /* Assets.xcassets */; };
 		66E8B8AF1DF510B500901861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E8B8AD1DF510B500901861 /* LaunchScreen.storyboard */; };
+		66E8B8CB1DF5197F00901861 /* HHCalender.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8B8C61DF5197F00901861 /* HHCalender.m */; };
+		66E8B8CC1DF5197F00901861 /* HHDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8B8C81DF5197F00901861 /* HHDateFormatter.m */; };
+		66E8B8CD1DF5197F00901861 /* NSDate+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E8B8CA1DF5197F00901861 /* NSDate+extension.swift */; };
+		66E8B8D31DF51AED00901861 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E8B8D21DF51AED00901861 /* NSDate+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		66E8B8AB1DF510B500901861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E8B8AE1DF510B500901861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66E8B8B01DF510B500901861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E8B8B81DF5119000901861 /* dealTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dealTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		66E8B8C51DF5197F00901861 /* HHCalender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCalender.h; sourceTree = "<group>"; };
+		66E8B8C61DF5197F00901861 /* HHCalender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCalender.m; sourceTree = "<group>"; };
+		66E8B8C71DF5197F00901861 /* HHDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDateFormatter.h; sourceTree = "<group>"; };
+		66E8B8C81DF5197F00901861 /* HHDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDateFormatter.m; sourceTree = "<group>"; };
+		66E8B8CA1DF5197F00901861 /* NSDate+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+extension.swift"; sourceTree = "<group>"; };
+		66E8B8D11DF51AED00901861 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		66E8B8D21DF51AED00901861 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +74,11 @@
 				66E8B8A31DF510B500901861 /* AppDelegate.m */,
 				66E8B8A51DF510B500901861 /* ViewController.h */,
 				66E8B8A61DF510B500901861 /* ViewController.m */,
+				66E8B8C41DF5197F00901861 /* 时间处理工具类(OC) */,
+				66E8B8C91DF5197F00901861 /* 时间处理工具类(Swift) */,
 				66E8B8A81DF510B500901861 /* Main.storyboard */,
 				66E8B8AB1DF510B500901861 /* Assets.xcassets */,
+				66E8B8B81DF5119000901861 /* dealTime-Bridging-Header.h */,
 				66E8B8AD1DF510B500901861 /* LaunchScreen.storyboard */,
 				66E8B8B01DF510B500901861 /* Info.plist */,
 				66E8B89F1DF510B500901861 /* Supporting Files */,
@@ -77,6 +92,27 @@
 				66E8B8A01DF510B500901861 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66E8B8C41DF5197F00901861 /* 时间处理工具类(OC) */ = {
+			isa = PBXGroup;
+			children = (
+				66E8B8D11DF51AED00901861 /* NSDate+Category.h */,
+				66E8B8D21DF51AED00901861 /* NSDate+Category.m */,
+				66E8B8C51DF5197F00901861 /* HHCalender.h */,
+				66E8B8C61DF5197F00901861 /* HHCalender.m */,
+				66E8B8C71DF5197F00901861 /* HHDateFormatter.h */,
+				66E8B8C81DF5197F00901861 /* HHDateFormatter.m */,
+			);
+			path = "时间处理工具类(OC)";
+			sourceTree = "<group>";
+		};
+		66E8B8C91DF5197F00901861 /* 时间处理工具类(Swift) */ = {
+			isa = PBXGroup;
+			children = (
+				66E8B8CA1DF5197F00901861 /* NSDate+extension.swift */,
+			);
+			path = "时间处理工具类(Swift)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +146,7 @@
 				TargetAttributes = {
 					66E8B89B1DF510B500901861 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E8B8CC1DF5197F00901861 /* HHDateFormatter.m in Sources */,
 				66E8B8A71DF510B500901861 /* ViewController.m in Sources */,
+				66E8B8D31DF51AED00901861 /* NSDate+Category.m in Sources */,
+				66E8B8CB1DF5197F00901861 /* HHCalender.m in Sources */,
 				66E8B8A41DF510B500901861 /* AppDelegate.m in Sources */,
+				66E8B8CD1DF5197F00901861 /* NSDate+extension.swift in Sources */,
 				66E8B8A11DF510B500901861 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,10 +311,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = dealTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-0----.dealTime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dealTime/dealTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -281,10 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = dealTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-0----.dealTime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dealTime/dealTime-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
